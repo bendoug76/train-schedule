@@ -1,0 +1,38 @@
+.jumbotron{
+    color: white;
+    background-color: brown;
+    margin: 10%;
+    opacity: 0.5;
+}
+
+#jt{
+    background-color: brown;
+}
+
+.jumbotron.jumbotron-fluid{
+    background-color: brown;
+
+}
+
+#table-div{
+    margin: 3%;
+    opacity: 0.7;
+
+}
+
+form{
+    margin: 3%;
+    background-color: grey;
+    color: azure;
+    opacity: 0.7;
+}
+
+.form-group{
+    margin: 2%;
+}
+ body{
+     background-image: url(../assets/images/tracks.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     
+ }
