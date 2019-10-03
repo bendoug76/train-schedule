@@ -61,7 +61,7 @@ var firebaseConfig = {
 
   var nextTrain = moment().add(minAway, "minutes").format("HH:mm");
 
-  $(".table>tbody").append("<tr><td>"+ trainName + "</td><td>" + destination + "</td><td>" + nextTrain + "</td><td>" + frequency + "</td><td>" + minAway + "</td><tr>");
+  $(".table>tbody").append("<tr><td>"+ trainName + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextTrain + "</td><td>" + minAway + "</td><tr>");
 
   });
 
