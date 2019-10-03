@@ -14,7 +14,7 @@ var firebaseConfig = {
 
   // onclick for grabing user input
 
-  $("#add-tain").on("click", function(){
+  $("#add-train").on("click", function(){
   
   var trainName = $("#train-name").val().trim();
   var destination = $("#destination").val().trim();
@@ -43,7 +43,7 @@ var firebaseConfig = {
 
   //add trains to database
 
-  database.ref().on("append_child", function(childSnapshot){
+  database.ref().on("child_added", function(childSnapshot){
     console.log(childSnapshot.val());
 
   var trainName = childSnapshot.val().name;
