@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="assets/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script src="jquery-3.4.1.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
-      <div id="jt" class="container">
-        <h1 class="display-4">Train Schedule</h1>
-        <p class="lead">Chugga-chugga chugga-chugga. TOOT! TOOT!</p>
-      </div>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>It's Train Time</title>
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div id="jt" class="container">
+      <h1 class="display-4">Train Schedule</h1>
+      <p class="lead">Chugga-chugga chugga-chugga. TOOT! TOOT!</p>
     </div>
-    <div id="table-div">
+  </div>
+  <div id="table-div">
     <table class="table table-dark">
       <thead>
         <tr>
@@ -36,47 +37,30 @@
 
       </tbody>
     </table>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Train Name</label>
+      <input class="form-control" id="train-name" aria-describedby="emailHelp" placeholder="Enter Train Name" />
     </div>
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Train Name</label>
-        <input
-          class="form-control"
-          id="train-name"
-          aria-describedby="emailHelp"
-          placeholder="Enter Train Name"
-        />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Destination</label>
-        <input
-          class="form-control"
-          id="destination"
-          placeholder="Enter Destination"
-        />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">First Train Time (HH:mm - millitary time)</label>
-        <input
-          class="form-control"
-          id="train-time"
-          aria-describedby="emailHelp"
-          placeholder="Enter Train Time"
-        />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Frequency (min)</label>
-        <input
-          type="password"
-          class="form-control"
-          id="frequency"
-          placeholder="Enter Frequency"
-        />
-      </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Destination</label>
+      <input class="form-control" id="destination" placeholder="Enter Destination" />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">First Train Time (HH:mm - millitary time)</label>
+      <input class="form-control" id="train-time" aria-describedby="emailHelp" placeholder="Enter Train Time" />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Frequency (min)</label>
+      <input type="password" class="form-control" id="frequency" placeholder="Enter Frequency" />
+    </div>
 
-      <button type="submit" class="btn btn-dark">Submit</button>
-    </form>
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+  <script src="assets/javascript.js"></script>
+  
+</body>
 
-    <script src="assets/javascript.js"></script>
-  </body>
 </html>
